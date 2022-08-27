@@ -119,7 +119,7 @@ def print_results(results_dic, results_stats_dic, model,
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR-
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
             if (results_dic[key][3] == 0 and results_dic[key][4] == 1) or (results_dic[key][3] == 1 and results_dic[key][4] == 0):
-                print(results_dic[3] , '-->', results_stats_dic[4])
+                print(results_dic[key][3], '-->', results_dic[key][4])
 
 
 
